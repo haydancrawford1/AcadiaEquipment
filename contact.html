@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+        <title>Acadia Park Equipment Co.</title>
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <title>Acadia Park Equipment Co.</title>
+        <style type="text/css">
+            div { padding:10px;
+                width:250px;
+                height: 350px;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body bgcolor="#E5E7E6">
+        <form name="contactform" method="post" action="formprocess.html">
+        <table cellpadding="5px">
+        <tr>
+        <td><label for="fname">First name:</label></td>
+        <td colspan="2"><input type="text" id="fname" name="fname" value="enter first name" size="25" maxlength="25"></td>
+        <td><label for="lname">Last name:</label></td>
+        <td colspan="2"><input type="text" id="lname" name="lname" value="enter last name" size="25" maxlength="25"></td>
+        </tr>
+        <tr>
+        <td><label for="phone">Phone number:</label></td>
+        <td colspan="2"><input type="text" id="phone" name="phone" value="enter phone number" size="25" maxlength="10"></td>
+        <td><label for="email">Email:</label></td>
+        <td colspan="2"><input type="text" id="email" name="email" value="enter email" size="25" maxlength="20"></td>
+        </tr>
+        <tr>
+        <td valign="top"><label for="select">Choose a topic:</label></td>
+        <td colspan="2">
+        <select name="category" size="1">
+        <option value="1">Shipment</option>
+        <option value="2">Billing</option>
+        <option value="3">Products</option>
+        <option value="4">Other</option>
+        </select>
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        Question:</td>
+        <td colspan="2"><textarea name="question" rows="7" cols="30">Enter your question here.
+        </textarea></td>
+        <tr>
+        <td valign="top">
+        Contact method:</td>
+        <td><input type="checkbox" id="contact1" name="contact1" value="email">
+        <label for="contact1">Email</label></td>
+        <td><input type="checkbox" id="contact2" name="contact2" value="phone">
+        <label for="contact2">Phone</label></td>
+        <td><input type="checkbox" id="contact3" name="contact3" value="text">
+        <label for="contact3">Text</label></td>
+        </tr>
+        <tr>
+        <td>
+        <input type="submit" name="submit" value="Submit"></td>
+        </tr>
+        </table>
+        </form>
+    </body>
+</html>

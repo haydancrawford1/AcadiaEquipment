@@ -1,0 +1,155 @@
+/* CSS Document */
+
+h1 {font-family:Cambria;
+    font-size: 25px;
+    color:#e5e7e6;
+}
+h3 { color:#FFF000;
+    font-family: Cambria, sans-serif;
+    font-size: 30px;
+}
+h1{ 
+    font-size: 50px;
+}
+h2{
+    color:#e9692c;
+    text-align: center;
+    
+}
+h1,h2,h4{
+    font-family: Cambria, sans-serif, bold;
+}
+
+
+body {font-family: Cambria, sans-serif;
+    font-size:18px;
+    background-color: #e5e7e6;
+}
+
+.div-container {
+  margin: 0 5%;
+}
+
+article {
+  display: inline-block;
+  color:#4CBB17;
+}
+
+.one-third {
+  margin-right: 3%;
+  width: 30%;
+}
+
+.one-third:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  article {
+    color: #000000;
+  }
+
+  .one-third {
+    width: 97%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  article {
+    color: #e5e7e6;
+    display: block;
+  }
+
+  .one-third {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  article {
+    color:#8A3324;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  article {
+    font-weight: bolder;
+  }
+}
+@media (min-width:576px){
+
+
+}
+@media (min-width:992px){
+
+}
+@media (min-width:1200px){
+
+}
+@media (min-width:1400px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
