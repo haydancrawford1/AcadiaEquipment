@@ -1,70 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Park Equipment Company</title>
-  <!-- Add your CSS link here for styling -->
-  <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Accordion - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#accordion" ).accordion();
-  } );
+  <link type="text/css" rel="stylesheet" src="css/styles.css">
+  <script type="text/javascript" src="js/script.js"> </script>
+  <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <link href="js/jquery-ui.theme.min.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/jqUi/external/jquery/jquery.js"></script>
+  <script type="text/javascript" src="/js/jqUi/jquery-ui.js"></script>
+  <title>Acadia Park Equipment Co.</title>
   </script>
+  <style>
+    body {font-family: 'Cambria', sans-serif;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 600px;
+        font-family:"Cambria";
+        background-position: top center;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        background-color: #E5E7E6;
+       }
+   </style>
+   <script>
+    $(function(){
+      $("#accordion").accordion();
+    });
+   </script>
 </head>
 
 <body>
-
-
+  <header>
+    <nav class="navbar">
+      <a href="/css/styles.css" class="nav-branding">ACADIA PARK EQUIPMENT CO.</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="shop.html" class="nav-link">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        </li>
+      </ul>
+  </header>
+  <img src="/images/grouponhill.jpg" width="300">
   <div id="accordion">
     <h3>Our Vision</h3>
-    <div>
-      <img src="/images/grouponhill.jpg" width="300">
+    <div id="para1" class="paraCl2">
       <p text-align="justify">As Acadia Park Equipment Co. moves towards its goal of making it affordable for outdoor enthusiasts to enjoy nature, we will support organizations
         whose main efforts involve research to continue preservation efforts towards the environment. We regularly encourage employees to engage in preservation 
         and clean-up efforts to help the environment.</p>
-
     </div>
+    <div id="para1" class="paraCl2">
     <h3>Our History</h3>
-    <div>
-      <img src="images/group2.jpg" width="300">
       <p>
         Acadia Park Equipment Co. was founded by a brother and sister who were inspired by their love of the outdoors. They decided to start Acadia Outdoor 
         Equipment Co. in response to all of the overpriced outdoor products in the big box retail stores, and sought to create high-quality products at a 
         price anyone can afford. The company’s mission is to spread the love and appreciation of the outdoors to all of its customers and beyond.</p>
-      
     </div>
   </div>
 </body>
 
-<footer class="footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img src="images/acadialogo-main copy.jpg" alt="Acadia Park Equipment Co." width="100">
-      </div>
-      <div class="footer-contact">
-        <h4>Contact Us:</h4>
-        <p>123 Park Street, Acadia</p>
-        <p>Email: info@acadiapark.com</p>
-        <p>Phone: (555) 123-4567</p>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
 <footer>
     <div class="footer-bottom">
       <p>&copy; 2023 Acadia Park Equipment Co. All rights reserved.</p>
