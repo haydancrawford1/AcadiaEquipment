@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html"; charset="utf-8">
         <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link type="text/javascript" rel="javascript" href="/script.js">
         <title>Acadia Park Equipment Co.</title>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,8 @@
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
           <script type="textjavascript"></script>
           <script src="/Acadia/css/stylesheet.css">
+          </script>
+          <script language="javascript">
           </script>
           <style>
             body {font-family:Cambria;
@@ -46,6 +49,9 @@
             p{
                 text-align: justify;
             }
+            .contactform {
+              font-family:"Cambria";
+            }
           </style>
     </head>
     <body bgcolor="#E5E7E6">
@@ -73,51 +79,120 @@
             </div>
           </nav>
         </header>
-        <form name="contactform" method="post" action="formprocess.html">
-        <table cellpadding="5px">
-        <tr>
-        <td><label for="fname">First name:</label></td>
-        <td colspan="2"><input type="text" id="fname" name="fname" value="enter first name" size="15" maxlength="15"></td>
-        <td><label for="lname">Last name:</label></td>
-        <td colspan="2"><input type="text" id="lname" name="lname" value="enter last name" size="15" maxlength="15"></td>
-        </tr>
-        <tr>
-        <td><label for="phone">Phone number:</label></td>
-        <td colspan="2"><input type="text" id="phone" name="phone" value="enter phone number" size="15" maxlength="10"></td>
-        <td><label for="email">Email:</label></td>
-        <td colspan="2"><input type="text" id="email" name="email" value="enter email" size="20" maxlength="20"></td>
-        </tr>
-        <tr>
-        <td valign="top"><label for="select">Choose a topic:</label></td>
-        <td colspan="2">
-        <select name="category" size="1">
-        <option value="1">Shipment</option>
-        <option value="2">Billing</option>
-        <option value="3">Products</option>
-        <option value="4">Other</option>
-        </select>
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        Question:</td>
-        <td colspan="2"><textarea name="question" rows="7" cols="25">Enter your question here.
-        </textarea></td>
-        <tr>
-        <td valign="top">
-        Contact method:</td>
-        <td><input type="checkbox" id="contact1" name="contact1" value="email">
-        <label for="contact1">Email</label></td>
-        <td><input type="checkbox" id="contact2" name="contact2" value="phone">
-        <label for="contact2">Phone</label></td>
-        <td><input type="checkbox" id="contact3" name="contact3" value="text">
-        <label for="contact3">Text</label></td>
-        </tr>
-        <tr>
-        <td>
-        <input type="submit" name="submit" value="Submit"></td>
-        </tr>
-        </table>
-        </form>
+        <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+          <div class="container mx-auto">
+            <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+              <div class="text-center">
+                <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+                  Contact Us
+                </h1>
+                <p class="text-gray-400 dark:text-gray-400">
+                  Fill up the form below to send us a message.
+                </p>
+              </div>
+              <div class="m-7">
+                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                  <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                  <input type="checkbox" name="botcheck" id="" style="display: none;" />
+        
+                  <div class="mb-6">
+                    <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                  </div>
+                  <div class="mb-6">
+                    <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                  </div>
+                  <div class="mb-6">
+                    <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                  </div>
+                  <div class="mb-6">
+                    <label for="select" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Choose a topic:</label>
+                      <td colspan="2">
+                      <select name="category" size="1">
+                      <option value="1">Shipment</option>
+                      <option value="2">Billing</option>
+                      <option value="3">Products</option>
+                      <option value="4">Other</option>
+                      </select>
+                      </td>
+                  </div>
+                  <div class="mb-6">
+                    <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Questions</label>
+        
+                    <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                  </div>
+                  <div class="mb-6">
+                      <label for="contactmethod" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Contact method:</label></td>
+                      <td><input type="checkbox" id="contact1" name="contact1" value="email">
+                      <label for="contact1">Email</label></td>
+                      <td><input type="checkbox" id="contact2" name="contact2" value="phone">
+                      <label for="contact2">Phone</label></td>
+                      <td><input type="checkbox" id="contact3" name="contact3" value="text">
+                      <label for="contact3">Text</label></td>
+                      </tr>
+                  </div>
+                  <div class="mb-6">
+                    <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                      Submit
+                    </button>
+                  </div>
+                  <p class="text-base text-center text-gray-400" id="result"></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
