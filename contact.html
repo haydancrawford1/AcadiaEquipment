@@ -4,81 +4,39 @@
         <meta http-equiv="content-type" content="text/html"; charset="utf-8">
         <link type="text/css" rel="stylesheet" href="css/styles.css">
         <link type="text/javascript" rel="javascript" href="/script.js">
-        <title>Acadia Park Equipment Co.</title>
+        <title>Contact Us-Acadia Park Equipment Co.</title>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
           <script type="textjavascript"></script>
-          <script src="/Acadia/css/stylesheet.css">
+          <script src="/css/styles.css">
           </script>
-          <script language="javascript">
-          </script>
-          <style>
-            body {font-family:Cambria;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 600px;
-                font-family:"Cambria";
-                background-position: top center;
-                background-repeat:no-repeat;
-                background-attachment: fixed;
-                background-color: #E5E7E6;
-              }
-            .jumbotron {background-image:url(images/grouphike.jpg);
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size:cover;
-              font-family:"Cambria";
-            }
-            .container {font-family:"Cambria";
-            }
-            .navbar {font-family:"Cambria";
-              background-color:white;
-              padding: 0%;
-              margin-bottom: 0%;
-              margin-bottom: 0%;
-          
-          }
-            .navbar-toggle {background-color:#E9692C;}
-            .active {background-color: #E9692C;}
-            h2 {
-                text-align: center;
-            }
-            p{
-                text-align: justify;
-            }
-            .contactform {
-              font-family:"Cambria";
-            }
-          </style>
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+          <script language="javascript"></script>
     </head>
-    <body bgcolor="#E5E7E6">
-        <header>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span> 
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="images/acadialogo-main copy.jpg" width="50"> </img></a>
+    <body>
+      <div class="header">
+        <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/acadialogo-main copy.jpg" width="125px" alt="logo"></a>
               </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="shop.html">Explore</a></li> 
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
+              <nav>
+                  <ul id="MenuItems">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="product.html">Products</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="account.html">Account</a></li>
+                  </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart-shopping-solid.png" alt="cart" width="30px" height="30px"></a>
+              <img src="images/hamburger.png" class="menu-icon" onclick="menutoggle()">
+          </div>
+ 
         <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
           <div class="container mx-auto">
             <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
@@ -145,6 +103,72 @@
             </div>
           </div>
         </div>
+
+        <img src="images/map.jpg" id="map">
+
+        <!-----footer---->
+        <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="footer-col-1">
+                      <h3>Download Our App</h3>
+                      <p>Download App for Android and iOS mobile phone.</p>
+                      <div class="app-logo">
+                          <img src="images/apps.png">
+                      </div>
+                  </div>
+                  <div class="footer-col-2">
+                      <img src="images/acadialogo-main copy.jpg">
+                  </div>
+                  <div class="footer-col-3">
+                      <h3>Useful Links</h3>
+                      <ul>
+                      <li>Return Policy</li>
+                      <li>Mission Statement</li>
+                      <li src="contact.html">Contact Us</li>
+                      </ul>
+                  </div>
+                  <div class="footer-col-4">
+                  <ul>
+                      <h3>Follow Us</h3>
+                      <li>Facebook</li>
+                      <li>Twitter</li>
+                      <li>Instagram</li>
+                  </ul>
+                  </div>
+              </div>
+              <hr>
+              <p class="copyright">Copyright 2023</p>
+          </div>
+      </div>
+  <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle(){
+          if (MenuItems.style.maxHeight == "0px")
+          {
+              MenuItems.style.maxHeight = "200px";
+          }
+          else
+          {
+              MenuItems.style.maxHeight = "0px";
+          }
+      }
+  </script>
+  <script>
+      var LoginForm = document.getElementById("LoginForm");
+      var RegisterForm = document.getElementById("RegisterForm");
+      var Indicator = document.getElementById("Indicator");
+
+      function register(){
+          RegisterForm.style.transform = "translateX(0px)";
+          LoginForm.style.transform = "translateX(0px)";
+      }
+      function login(){
+          RegisterForm.style.tran
+      }
+
+  </script>
     </body>
 </html>
 

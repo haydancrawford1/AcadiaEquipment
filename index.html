@@ -1,126 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Arcadia Park Equipment Co.</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script type="textjavascript"></script>
-  <script src="/Acadia/css/stylesheet.css">
-  </script>
-  <style>
-    body {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 600px;
-        font-family:"Cambria", sans-serif;
-        background-position: top center;
-        background-repeat:no-repeat;
-        background-attachment: fixed;
-        background-color: #E5E7E6;
-      }
-    .jumbotron {background-image:url(images/grouphike.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size:cover;
-      font-family:"Cambria";
-      text-align: center;
-    }
-    .container {font-family:"Cambria";
-    }
-    .navbar {font-family:"Cambria";
-      background-color:white;
-  
-  }
-    .navbar-toggle {background-color:#E9692C;}
-    .active {background-color: #E9692C;}
-    h2 {
-        text-align: center;
-    }
-    .products{
-        text-align: justify;
-        font-size: 18px;
-        font-family:"Cambria", sans-serif;
-    }
-    .productimg{
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
-        </button>
-        <a class="navbar-brand" href="index.html"><img src="images/acadialogo-main copy.jpg" width="50"> </img></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="shop.html">Explore</a></li> 
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="contact.html"> Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<div class="jumbotron text-center">
-  <h1 class="h1"><font color="#E5E7E6" font-family="Cambria" font-size="50px">Arcadia Park Equipment Co.</font></h1>
-  <p><font color="#FFF000"><i>your adventure, your world.</i></font></p> 
-</div>
-  <br>
-  <br>    
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-        <img class="productimg" src="images/backpack.jpg" width="350" height="475">
-      <h2><a href="shop.html" id="shop"><font color="#e9692c">Hiking</font></a></h2>
-      <p class="products"><i>A hiking we will go with the latest packs, coolers, boots, and so much more.</p>
-      <p class="products">All the brands you love at a realistic and reasonible price.</p>
-    </div>
-    <div class="col-sm-4">
-        <img class="productimg" src="images/kayaks.jpg" width="350" height="475">
-      <h2><a href="shop.html" id="shop"><font color="#e9692c">Water</font></a></h2>
-      <p class="products">A kayaking we will go with the most resistant and durable of water accessories.</p>
-      <p class="products">The choices are endless from floating down the river to high intensitiy tubing.</p>
-    </div>
-    <div class="col-sm-4">
-        <img class="productimg" src="images/tent.jpg" width="350" height="475">
-    <h2><a href="shop.html" id="shop"><font color="#e9692c">Camping</font></a></h2>
-      <p class="products">A camping we will go with all our tents and supplies.</p>
-      <p class="products">Whether you like glamping for roughing it like the old days, we have you covered with tents and accessories.</i> </p>
-    </div>
-  </div>
-</div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Acadia Park Equipment Company</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 
-</body>
+    </head>
+    <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/acadialogo-main copy.jpg" width="125px" alt="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart-shopping-solid.png" alt="cart" width="30px" height="30px"></a>
+            <img src="images/hamburger.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Acadia Park Equipment Co.</h1>
+                <p>Your adventure, your world.
+                </p>
+                <a href="product.html" class="btn" > Adventure Awaits &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/grouponhill.png">
+            </div>
+        </div>
+      </div>  
+    </div>
+   <!-------Feature categories---------->
+        <div class="categories">
+            <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="product.html"><img src="images/backpack.jpg" alt="backpacker"></a>
+                </div>
+                <div class="col-3">
+                    <a href="product.html"><img src="images/kayaks.jpg" alt="kayaks"></a>
+                </div>
+                <div class="col-3">
+                    <a href="product.html"><img src="images/tent.jpg" alt="tent"></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    <!-----features products---->
+        <div class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="product-details.html"><img src="images/cooker.png"></a>
+                    <a href="product-details.html"><h4>Coffee Maker</h4></a>
+                    <p>$30.00</p>
+                </div>
+                <div class="col-4">
+                    <a href="product.html"><img src="images/tents.png"></a>
+                    <h4>Elite Camping Tent</h4>
+                    <p>$140.00</p>
+                </div>
+                <div class="col-4">
+                    <a href="product.html"><img src="images/blue-orange.png"></a>
+                    <h4>Everyday Traveler Backpack</h4>
+                    <p>$60.00</p>
+                </div>
+                <div class="col-4">
+                    <a href="product.html"><img src="images/Three-kayaks.png"></a>
+                    <h4>Water & Fire Kayaks</h4>
+                    <p>$160.00</p>
+                </div>
+            </div>
+        </div>
+<!-----footer---->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and iOS mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/apps.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/acadialogo-main copy.jpg">
+                        <p>Our purpose</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                        <li>Return Policy</li>
+                        <li>Mission Statement</li>
+                        <li src="contact.html">Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                    <ul>
+                        <h3>Follow Us</h3>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2023</p>
+            </div>
+        </div>
+ 
+ 
+ 
 
+    
+    
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if (MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    
+    
+    
+    
+    
+    </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
